@@ -3,10 +3,10 @@ name: SonarQube Analysis
 on:
   push:
     branches:
-      - 8-aplicativo-movil-version-2
+      - main
   pull_request:
     branches:
-      - 8-aplicativo-movil-version-2
+      - main
 
 jobs:
   sonarqube:
