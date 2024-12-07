@@ -50,7 +50,8 @@ void main() {
       expect(find.byType(Scaffold), findsOneWidget);
       expect(find.byType(Container), findsOneWidget);
       expect(find.byType(SafeArea), findsOneWidget);
-      expect(find.byType(Stack), findsOneWidget);
+      expect(find.byType(Stack),
+          findsNWidgets(2)); // Cambiado de findsOneWidget a findsNWidgets(2)
       expect(find.byType(Hero), findsOneWidget);
       expect(find.byType(Image), findsOneWidget);
     });
